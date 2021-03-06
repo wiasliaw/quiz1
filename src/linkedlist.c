@@ -1,6 +1,6 @@
-#include <stdlib.h>
-#include <stdbool.h>
 #include "linkedlist.h"
+#include <stdbool.h>
+#include <stdlib.h>
 
 bool list_is_ordered(node_t *list)
 {
@@ -32,7 +32,7 @@ void list_display(node_t *list)
 
 node_t *list_make_node_t(node_t *list, int val)
 {
-    node_t *n = (node_t*)malloc(sizeof(node_t));
+    node_t *n = (node_t *) malloc(sizeof(node_t));
     n->value = val;
     n->next = NULL;
     list_add_node_t(&list, n);

@@ -1,4 +1,5 @@
 #include <stdlib.h>
+#include <sys/random.h>
 #include "linkedlist.h"
 
 void quicksort(node_t **list)
