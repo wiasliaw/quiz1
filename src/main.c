@@ -32,6 +32,9 @@ void quicksort(node_t **list)
 int main()
 {
     size_t count = 20;
+    unsigned int buf[20];
+    getentropy(buf, 20);
+    srandom(*buf);
 
     node_t *list = NULL;
     while (count--)
